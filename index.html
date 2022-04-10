@@ -1,0 +1,120 @@
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+    integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"
+    integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="build/build.js"></script>
+  <link rel="shortcut icon" href="https://p5js.org/assets/img/favicon.ico" />
+  <link rel="icon" href="https://p5js.org/assets/img/favicon.ico" />
+
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    body {
+      width: 100%;
+      user-select: none;
+    }
+
+    .selectingMenu {
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      transform: translate(-50%);
+      width: 230px;
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .colorMenu {
+      position: absolute;
+      left: 50%;
+      top: 60px;
+      transform: translate(-50%);
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .colorMenu button {
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(209, 213, 219, 1);
+      background: #FFFFFF;
+
+      border: 1px solid #D1D5DB;
+      box-sizing: border-box;
+
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+      opacity: 0.75;
+      transition: 0.2s;
+    }
+
+    .colorMenu button:hover {
+      opacity: 1;
+    }
+
+    .selectingMenu button {
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(209, 213, 219, 1);
+      background: #FFFFFF;
+
+      border: 1px solid #D1D5DB;
+      box-sizing: border-box;
+
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+      opacity: 0.5;
+      transition: 0.2s;
+    }
+
+    .selectingMenu button:hover {
+
+      opacity: 0.7;
+    }
+
+    .selected {
+      opacity: 1 !important;
+    }
+
+    .selectingMenu button img {
+      width: 66%;
+      height: 66%;
+    }
+  </style>
+  <script></script>
+</head>
+
+<body>
+  <div class="selectingMenu">
+    <button id="drag" class="selected"><img src="https://i.imgur.com/0JUWjjK.png" alt=""></button>
+    <button id="connect"><img src="https://i.imgur.com/02YbdPs.png" alt=""></button>
+    <button id="add"><img src="https://i.imgur.com/Fsa9Akf.png" alt=""></button>
+    <button id="cut"><img src="https://i.imgur.com/UahUR2t.png" alt=""></button>
+
+  </div>
+  <div class="colorMenu">
+    <button id="col_white" style="background-color: #FFFFFF;"></button>
+    <button id="col_blue" style="background-color: #0EA5E9;"></button>
+    <button id="col_green" style="background-color: #10B981;"></button>
+    <button id="col_red" style="background-color: #EF4444;"></button>
+    <button id="col_orange" style="background-color: #F59E0B;"></button>
+    <button id="col_yellow" style="background-color: #FCD34D;"></button>
+
+  </div>
+
+</body>
+
+</html>
